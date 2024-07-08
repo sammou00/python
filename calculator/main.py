@@ -47,8 +47,8 @@ class Calculator:
             result = self.calculate(num_1, operation, num_2)
             print(f"{num_1} {operation} {num_2} = {result}")
             
-            cont = input("Would you like to perform another calculation? (y/n): ").strip().lower()
-            if cont != 'y':
+            answer = input("Would you like to perform another calculation? (y/n): ").strip().lower()
+            if answer != 'y':
                 print("Thank you for using calculator.")
                 break
 
