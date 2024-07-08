@@ -1,6 +1,6 @@
 class Calculator:
     """_summary_
-    This class is a simple calculator program that takes two numbers and an operation
+    This class is a simple calculator program that takes two numbers and an operator
     as input and returns the result of the operation.
     """
 
@@ -12,7 +12,7 @@ class Calculator:
             except ValueError:
                 print("Invalid input. Please enter a valid number.")
    
-    def get_operation(self):
+    def get_operator(self):
         valid_operations = ['+', '-', '*', '/']
         while True:
             operation = input("Enter an operation (+, -, *, /): ")
@@ -42,7 +42,7 @@ class Calculator:
         print("Welcome to calculator.")
         while True:
             num_1 = self.get_number()
-            operation = self.get_operation()
+            operation = self.get_operator()
             num_2 = self.get_number()
             result = self.calculate(num_1, operation, num_2)
             print(f"{num_1} {operation} {num_2} = {result}")
